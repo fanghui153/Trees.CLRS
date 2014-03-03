@@ -81,7 +81,7 @@ public class AVLTree {
                 }
             }
         }
-        Node.setHeight(Math.max(height(Node.getLc()), height(Node.getRc())));
+        Node.setHeight(1+Math.max(height(Node.getLc()), height(Node.getRc())));
         size++;
         return Node;
     }
