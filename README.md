@@ -1,4 +1,7 @@
-AVL
+TreesInCLRS
 ===
 
-Implement AVL Tree in CLRS
+Implement Trees in CLRS
+For EC504
+
+
