@@ -8,9 +8,8 @@ package Trees.CLRS;
  * @version 1.0
  */
 public class AVLTree {
-    AVLNode root;
-
-    private int size = 0;
+    AVLNode root; // the root of the AVL tree
+    private int size = 0; // the size of the AVL tree
 
     /**
      * This constructor creates an empty AVLTree
@@ -201,7 +200,7 @@ public class AVLTree {
         } else {
             Node.setRc(delete(key, Node.getRc()));
         }
-        Node.setHeight(Math.max(height(Node.getLc()), height(Node.getRc())));
+        Node.setHeight(1+Math.max(height(Node.getLc()), height(Node.getRc())));
 
         if(Node.getLc() != null) {
             Node.setLc(rotate(Node.getLc()));
@@ -218,6 +217,10 @@ public class AVLTree {
      * @param key
      */
     public void delete(int key) {
+        if(size==1) {
+            root = null;
+            return;
+        }
         delete(key, root);
     }
 
