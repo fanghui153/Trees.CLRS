@@ -1,4 +1,4 @@
-package Trees.CLRS;
+package AVLTree.CLRS;
 
 /**
  * An AVL tree (Adelson-Velskii and Landis' tree, named after the inventors) is a self-balancing binary search tree.

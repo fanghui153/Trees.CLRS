@@ -1,4 +1,4 @@
-package Trees.CLRS;
+package AVLTree.CLRS;
 
 /**
  * This class implement the AVLNode
